@@ -1,26 +1,27 @@
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        std::vector<int>memory;
-        std::vector<int>memory2;
+        int counter = 0;
         int k = 0;
         for(int i = 0; i < nums.size(); i++){
-            if(nums[i] != 1000000){
-                if(std::find(memory.begin(), memory.end(), nums[i]) != memory.end()){
-                    if(std::find(memory2.begin(), memory2.end(), nums[i]) != memory2.end()){
-                        nums[i] = 1000000;
-                    }
-                    else{
-                        memory2.push_back(nums[i]);
-                        k++; 
-                    }
-                }
-                else{
-                    memory.push_back(nums[i]);
-                    k++;
-                }
+            if(i == 0){
+                k++;
+                counter++;
+            }
+            else if(nums[i] == nums[i - 1] && counter >= 2){
+                nums[i - 1] = 1000000; //i - 1 so in case the next one is repeating, the 1000000 will not disturb
+                counter++;
+            }
+            else if(nums[i] == nums[i - 1]){
+                counter++;
+                k++;
+            }
+            else{
+                k++;
+                counter = 1;
             }
         }
+        
         sort(nums.begin(), nums.end());
         return k;
     }
