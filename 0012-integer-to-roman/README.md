@@ -1,3 +1,8 @@
+This repository includes two solutions, both available in the commit history:
+
+- Solution 1: Optimized for speed; uses more memory.
+- Solution 2: Optimized for memory efficiency; slightly slower in execution.
+
 <h2><a href="https://leetcode.com/problems/integer-to-roman/?envType=study-plan-v2&envId=top-interview-150">12. Integer to Roman</a></h2><h3>Medium</h3><hr><p>Seven different symbols represent Roman numerals with the following values:</p>
 
 <table>
