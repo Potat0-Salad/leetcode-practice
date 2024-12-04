@@ -3,7 +3,6 @@ public:
     string intToRoman(int num) {
         string result = "";
         while(num != 0){
-            cout << num << " ";
             if(num >= 1000){
                 num -= 1000;
                 result += "M";
@@ -66,7 +65,6 @@ public:
                     result += "I";
                 }
             }
-            cout << result << endl;
         }
         return result;
     }
