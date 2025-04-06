@@ -4,3 +4,4 @@ This repository contains my solutions to various LeetCode problems. It serves as
 ## Languages Used
 
 - C++
+- Python
