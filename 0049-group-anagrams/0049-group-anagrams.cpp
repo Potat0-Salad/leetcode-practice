@@ -5,13 +5,6 @@ public:
         vector<vector<string>> results;
         unordered_set<string> done;
 
-        if(strs.size() == 1){
-            vector<string> answer;
-            answer.push_back(strs[0]);
-            results.push_back(answer);
-            return results;
-        }
-
         for (string &str : sorted) {
             sort(str.begin(), str.end());
         }
