@@ -22,7 +22,7 @@ public:
         next.push(start);
 
         while(!next.empty()){
-            vector<TreeNode*> currentVec = next.front();
+            vector<TreeNode*> currentVec = move(next.front());
             next.pop();
             vector<int> toPrint;
 
@@ -37,7 +37,7 @@ public:
                 }
             }
             if (!nextNodes.empty()) next.push(nextNodes);
-            result.push_back(toPrint);
+            result.push_back(move(toPrint));
         }
         return result;
     }
