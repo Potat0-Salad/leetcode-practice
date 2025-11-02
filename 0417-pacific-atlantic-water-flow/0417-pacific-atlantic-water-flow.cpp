@@ -3,7 +3,9 @@ public:
     int numCols;
     int numRows;
 
-    void reaches(int currC, int currR, vector<vector<int>>& heights, vector<vector<bool>>& visited, int ocean){
+    //DISCLAIMER: I KNOW I ACCIDENTALLY SWAPPED THE COLS AND ROWS AROUND - IDK WHAT WAS I THINKING WHEN CODING THIS
+
+    void reaches(int currC, int currR, vector<vector<int>>& heights, vector<vector<bool>>& visited){
 
 
         if(visited[currC][currR] == true){
@@ -14,22 +16,22 @@ public:
 
         if(currR != 0){
             if(heights[currC][currR - 1] >= heights[currC][currR]){
-                reaches(currC, currR - 1, heights, visited, ocean);
+                reaches(currC, currR - 1, heights, visited);
             }
         }
         if(currR != numRows - 1){
             if(heights[currC][currR + 1] >= heights[currC][currR]){
-                reaches(currC, currR + 1, heights, visited, ocean);
+                reaches(currC, currR + 1, heights, visited);
             }
         }
         if(currC != 0){
             if(heights[currC - 1][currR] >= heights[currC][currR]){
-                reaches(currC - 1, currR, heights, visited, ocean);
+                reaches(currC - 1, currR, heights, visited);
             }
         }
         if(currC != numCols - 1){
             if(heights[currC + 1][currR] >= heights[currC][currR]){
-                reaches(currC + 1, currR, heights, visited, ocean);
+                reaches(currC + 1, currR, heights, visited);
             }
         }
 
@@ -50,17 +52,17 @@ public:
         for(int i = 0; i < numCols; i++){
             for(int j = 0; j < numRows; j++){
                 if(i == 0){
-                    reaches(i, j, heights, visitedP, 0);
+                    reaches(i, j, heights, visitedP);
                 }
                 else if(j == 0){
-                    reaches(i, j, heights, visitedP, 0);
+                    reaches(i, j, heights, visitedP);
                 }
 
                 if(i == numCols - 1){
-                    reaches(i, j, heights, visitedA, 1);
+                    reaches(i, j, heights, visitedA);
                 }
                 else if(j == numRows - 1){
-                    reaches(i, j, heights, visitedA, 1);
+                    reaches(i, j, heights, visitedA);
                 }
             }
         }
