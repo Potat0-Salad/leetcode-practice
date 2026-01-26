@@ -5,3 +5,4 @@ This repository contains my solutions to various LeetCode problems. It serves as
 
 - C++
 - Python
+- JavaScript
