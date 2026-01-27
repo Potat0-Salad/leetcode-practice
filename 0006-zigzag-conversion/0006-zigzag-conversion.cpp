@@ -11,23 +11,20 @@ public:
             return s;
         }
 
-        while(ct <= s.size() - 1){
+        while(ct < s.size()){
+            rows[currRow]+= s[ct];
             if(currDir == true && currRow < numRows - 1){
-                rows[currRow]+= s[ct];
                 currRow++;
             }
             else if(currDir == true && currRow == numRows - 1){
                 currDir = !currDir; //change direction
-                rows[currRow]+= s[ct];
                 currRow--;
             }
             else if(currDir == false && currRow > 0){
-                rows[currRow]+= s[ct];
                 currRow--;
             }
             else if(currDir == false && currRow == 0){
                 currDir = !currDir;
-                rows[currRow]+= s[ct];
                 currRow++;
             }
             ct++;
