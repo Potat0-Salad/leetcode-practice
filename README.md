@@ -13,16 +13,23 @@ This repository contains my solutions to various LeetCode problems. It serves as
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0146-lru-cache](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0146-lru-cache/) | Medium |
+| [0355-design-twitter](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0355-design-twitter/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0146-lru-cache](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0146-lru-cache/) | Medium |
+| [0355-design-twitter](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0355-design-twitter/) | Medium |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0146-lru-cache](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0146-lru-cache/) | Medium |
+| [0355-design-twitter](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0355-design-twitter/) | Medium |
 ## Doubly-Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0146-lru-cache](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0146-lru-cache/) | Medium |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0355-design-twitter](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0355-design-twitter/) | Medium |
 <!---LeetCode Topics End-->
