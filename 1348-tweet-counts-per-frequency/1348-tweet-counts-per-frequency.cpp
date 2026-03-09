@@ -19,7 +19,6 @@ public:
         int numChunks;
         int numSec;
 
-
         if(freq == "minute"){
             numSec = 60;
         }
@@ -32,8 +31,9 @@ public:
         numChunks = (endTime - startTime) / numSec + 1;
         vector<int> result (numChunks, 0);
 
-        int index = startTime;
-        auto it = lower_bound(tweets[tweetName].begin(), tweets[tweetName].end(), index);
+        // auto it = lower_bound(tweets[tweetName].begin(), tweets[tweetName].end(), startTime);
+        auto& userTweets = tweets[tweetName];
+        auto it = userTweets.lower_bound(startTime);
 
         while(it != tweets[tweetName].end() && *it <= endTime){
             int currentChunk = (*it - startTime) / numSec;
