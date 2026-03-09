@@ -31,7 +31,6 @@ public:
         numChunks = (endTime - startTime) / numSec + 1;
         vector<int> result (numChunks, 0);
 
-        // auto it = lower_bound(tweets[tweetName].begin(), tweets[tweetName].end(), startTime);
         auto& userTweets = tweets[tweetName];
         auto it = userTweets.lower_bound(startTime);
 
