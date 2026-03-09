@@ -1,6 +1,6 @@
 class TweetCounts {
 private:
-    unordered_map<string, vector<int>> tweets;
+    unordered_map<string, multiset<int>> tweets;
 
 public:
     TweetCounts() {
@@ -8,15 +8,13 @@ public:
     }
     
     void recordTweet(string tweetName, int time) {
-        tweets[tweetName].push_back(time);
+        tweets[tweetName].insert(time);
     }
     
     vector<int> getTweetCountsPerFrequency(string freq, string tweetName, int startTime, int endTime) {
         if(tweets.count(tweetName) == 0){
             return vector<int>{0};
         }
-
-        sort(tweets[tweetName].begin(), tweets[tweetName].end());
 
         int numChunks;
         int numSec;
