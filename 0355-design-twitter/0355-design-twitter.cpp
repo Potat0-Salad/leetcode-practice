@@ -32,7 +32,6 @@ public:
     
     void unfollow(int followerId, int followeeId) {
         connections[followerId].erase(followeeId);
-        cout << "User " << followerId << " un-followed: " << followeeId << endl;
     }
 };
 
