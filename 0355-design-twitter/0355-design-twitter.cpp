@@ -1,45 +1,75 @@
+#include <vector>
+#include <unordered_map>
+#include <unordered_set>
+#include <queue>
+
+using namespace std;
+
 class Twitter {
 private:
-    deque<pair<int, int>> feed; //userid, postid
+    struct Tweet {
+        int id;
+        int time;
+    };
+
+
+    unordered_map<int, vector<Tweet>> userTweets;
     unordered_map<int, unordered_set<int>> connections;
+    int timer;
+
 public:
-    Twitter() {
-        
-    }
-    
+    Twitter() : timer(0) {}
+
     void postTweet(int userId, int tweetId) {
-        feed.push_front({userId, tweetId});
+        userTweets[userId].push_back({tweetId, timer++});
     }
-    
+
     vector<int> getNewsFeed(int userId) {
-        vector<int> result;
-        auto end_it = feed.end();
-        auto it = feed.begin();
+        priority_queue<vector<int>> pq;
 
-        while(it != end_it && result.size() < 10){
-            if(connections[userId].contains(it->first) || userId == it->first){
-                result.push_back(it->second);
+        addLatestToPQ(userId, pq);
+
+        if (connections.contains(userId)) {
+            for (int followeeId : connections[userId]) {
+                addLatestToPQ(followeeId, pq);
             }
+        }
 
-            it++;
+        vector<int> result;
+        while (!pq.empty() && result.size() < 10) {
+            vector<int> top = pq.top();
+            pq.pop();
+
+            int tweetId = top[1];
+            int authorId = top[2];
+            int nextIdx = top[3] - 1;
+
+            result.push_back(tweetId);
+
+            if (nextIdx >= 0) {
+                const Tweet& t = userTweets[authorId][nextIdx];
+                pq.push({t.time, t.id, authorId, nextIdx});
+            }
         }
         return result;
     }
-    
+
     void follow(int followerId, int followeeId) {
-        connections[followerId].insert(followeeId);
+        if (followerId != followeeId) {
+            connections[followerId].insert(followeeId);
+        }
     }
-    
+
     void unfollow(int followerId, int followeeId) {
         connections[followerId].erase(followeeId);
     }
-};
 
-/**
- * Your Twitter object will be instantiated and called as such:
- * Twitter* obj = new Twitter();
- * obj->postTweet(userId,tweetId);
- * vector<int> param_2 = obj->getNewsFeed(userId);
- * obj->follow(followerId,followeeId);
- * obj->unfollow(followerId,followeeId);
- */
+private:
+    void addLatestToPQ(int userId, priority_queue<vector<int>>& pq) {
+        if (userTweets.contains(userId) && !userTweets[userId].empty()) {
+            int lastIdx = userTweets[userId].size() - 1;
+            const Tweet& t = userTweets[userId][lastIdx];
+            pq.push({t.time, t.id, userId, lastIdx});
+        }
+    }
+};
