@@ -9,7 +9,6 @@ public:
     
     void postTweet(int userId, int tweetId) {
         feed.push_front({userId, tweetId});
-        cout << "User " << userId << " posted: " << tweetId << endl;
     }
     
     vector<int> getNewsFeed(int userId) {
@@ -17,12 +16,9 @@ public:
         auto end_it = feed.end();
         auto it = feed.begin();
 
-        cout << "Get news feed for: " << userId << endl;
-
         while(it != end_it && result.size() < 10){
             if(connections[userId].contains(it->first) || userId == it->first){
                 result.push_back(it->second);
-                cout << it->second << endl;
             }
 
             it++;
@@ -32,7 +28,6 @@ public:
     
     void follow(int followerId, int followeeId) {
         connections[followerId].insert(followeeId);
-        cout << "User " << followerId << " followed: " << followeeId << endl;
     }
     
     void unfollow(int followerId, int followeeId) {
