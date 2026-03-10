@@ -21,7 +21,6 @@ class ParkingSystem{
     bool addCar(int carType){
         switch(carType){
             case 1:
-                cout << "wanting to add big, nr of big spaces: " << bigCars << endl;
                 if(bigCars < numBig){
                     bigCars++;
                     return true;
