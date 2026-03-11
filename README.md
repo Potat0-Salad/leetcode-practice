@@ -15,6 +15,7 @@ This repository contains my solutions to various LeetCode problems. It serves as
 | [0146-lru-cache](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0146-lru-cache/) | Medium |
 | [0355-design-twitter](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0355-design-twitter/) | Medium |
 | [1348-tweet-counts-per-frequency](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1348-tweet-counts-per-frequency/) | Medium |
+| [1396-design-underground-system](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1396-design-underground-system/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -26,6 +27,7 @@ This repository contains my solutions to various LeetCode problems. It serves as
 | [0146-lru-cache](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0146-lru-cache/) | Medium |
 | [0355-design-twitter](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0355-design-twitter/) | Medium |
 | [1348-tweet-counts-per-frequency](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1348-tweet-counts-per-frequency/) | Medium |
+| [1396-design-underground-system](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1396-design-underground-system/) | Medium |
 | [1603-design-parking-system](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1603-design-parking-system/) | Easy |
 ## Doubly-Linked List
 | Problem Name | Difficulty |
@@ -39,6 +41,7 @@ This repository contains my solutions to various LeetCode problems. It serves as
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1348-tweet-counts-per-frequency](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1348-tweet-counts-per-frequency/) | Medium |
+| [1396-design-underground-system](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1396-design-underground-system/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
