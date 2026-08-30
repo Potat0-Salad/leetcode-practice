@@ -19,6 +19,7 @@ This repository contains my solutions to various LeetCode problems. It serves as
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0023-merge-k-sorted-lists/) | Hard |
 | [0146-lru-cache](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0146-lru-cache/) | Medium |
 | [0355-design-twitter](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0355-design-twitter/) | Medium |
 | [1472-design-browser-history](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1472-design-browser-history/) | Medium |
@@ -39,6 +40,7 @@ This repository contains my solutions to various LeetCode problems. It serves as
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0023-merge-k-sorted-lists/) | Hard |
 | [0355-design-twitter](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0355-design-twitter/) | Medium |
 ## String
 | Problem Name | Difficulty |
@@ -77,4 +79,16 @@ This repository contains my solutions to various LeetCode problems. It serves as
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1472-design-browser-history](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1472-design-browser-history/) | Medium |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0023-merge-k-sorted-lists/) | Hard |
+## Merge Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0023-merge-k-sorted-lists/) | Hard |
+## Tournament Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0023-merge-k-sorted-lists/) | Hard |
 <!---LeetCode Topics End-->
