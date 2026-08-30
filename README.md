@@ -12,6 +12,7 @@ This repository contains my solutions to various LeetCode problems. It serves as
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0001-two-sum](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0001-two-sum/) | Easy |
 | [0146-lru-cache](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0146-lru-cache/) | Medium |
 | [0355-design-twitter](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0355-design-twitter/) | Medium |
 | [1348-tweet-counts-per-frequency](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1348-tweet-counts-per-frequency/) | Medium |
@@ -70,6 +71,7 @@ This repository contains my solutions to various LeetCode problems. It serves as
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0001-two-sum](https://github.com/Potat0-Salad/leetcode-practice/tree/main/0001-two-sum/) | Easy |
 | [1472-design-browser-history](https://github.com/Potat0-Salad/leetcode-practice/tree/main/1472-design-browser-history/) | Medium |
 ## Stack
 | Problem Name | Difficulty |
